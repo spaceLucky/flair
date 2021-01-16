@@ -41,7 +41,7 @@ embeddings: StackedEmbeddings = StackedEmbeddings(embeddings=embedding_types)
 from flair.models import SequenceTagger
 
 tagger: SequenceTagger = SequenceTagger(
-    hidden_size=256,
+    hidden_size=128,
     embeddings=embeddings,
     tag_dictionary=tag_dictionary,
     tag_type=tag_type,
